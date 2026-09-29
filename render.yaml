@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: my-todo-app
+    runtime: docker
+    # "free" is fine for a demo, but it has no saved disk: tasks can reset.
+    # To keep tasks permanently, change to "starter" and uncomment the disk block.
+    plan: free
+    # disk:
+    #   name: todo-data
+    #   mountPath: /data
+    #   sizeGB: 1
